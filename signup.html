@@ -27,8 +27,48 @@
       <h1>
         Sign Up
       </h1>
-      <br>
-      </br>
+      <form action="/my-handling-form-page" method="post">
+        <div class="form-row">
+          <label for ="first">First Name</label>
+          <input type= "text" name="First" placeholder="John" id="first">
+        </div>
+        <div>
+          <label for="last">Last Name</label>
+          <input type= "text" name="Last" placeholder="Doe" id="last">
+        </div>
+        <div>
+          <label for ="email">Email</label>
+          <input type= "text" name="Email" placeholder="john@example.com" id="email">
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type= "text" name="Password" id="password">
+        </div>
+        <div class="hear">
+          <label for="how">How did you hear about us?</label>
+          <select type= "option" name="How" id="how">
+            <option>
+
+            </option>
+            <option>
+              Friend
+            </option>
+            <option>
+              Search
+            </option>
+            <option>
+              Other
+            </option>
+          </select>
+        </div>
+        <div class="checkbox">
+          <input type= "checkbox" name="Agree" id="agree">
+          <label for="agree">Agree to our terms of service</label>
+        </div>
+        <button>
+          Sign Up
+        </button>
+      </form>
     </main>
       <footer>
         <p>
