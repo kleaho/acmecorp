@@ -74,10 +74,6 @@ main {
   line-height: 115%
 }
 
-main.products{
-  padding-bottom:0px;
-}
-
 .leftfloat {
   background-color: #2A4CB2;
   font-family: "Lucida Grande";
@@ -91,7 +87,7 @@ main.products{
   padding-left: 20px;
   padding-right:20px;
   border-radius: 5px;
-  display:inline;
+  float: left;
 }
 
 main button {
@@ -141,29 +137,30 @@ header img {
 
 }
 
+div {
+  display:flex;
+}
+
 .original {
-  display:flex;
+  flex:1;
 }
 
-.row {
-  display:flex;
-  font-family: "Lucida Grande";
-  align-items: flex-start;
-  padding-top: 5px;
-  padding-bottom: 5px;
+.hair {
+flex:1;
+font-family: "Lucida Grande";
+border-bottom: 1px solid #CECECE;
 }
 
-.row.blasting {
-
+.blasting {
+flex:1;
+font-family: "Lucida Grande";
+border-bottom: 1px solid #CECECE;
+border-top: 1px;
 }
 
-.row.hair {
-  border-bottom: 1px solid #CECECE;
-  border-top: 1px solid #CECECE;
-}
-
-.row.jet {
-
+.jet {
+flex:1;
+font-family: "Lucida Grande";
 }
 
 .details {
@@ -178,35 +175,23 @@ header img {
   text-align: center;
 }
 
-.images {
+article {
   margin-bottom: 10px;
   margin-top: 10px;
-  border: 1px solid #CECECE;
-  flex:1;
-  padding: 5px;
-  display: inline-block;
+  border: 5px;
+  overflow: hidden;
 }
 
-main img {
-  width: 100%;
-}
-
-.details{
-  display:inline;
+.images {
+  border-radius: 5px;
+  border:5px;
+  border-color:#1B46B5;
 }
 
 .textbox {
   padding: 10px;
   margin-left: 10px;
   margin-right: 10px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  border: 5px;
-  flex:2;
-}
-
-.button-container {
-  margin-top: 5px;
 }
 
 form {
@@ -256,13 +241,4 @@ input {
 
 input:focus {
   border-color: #2A4CB2;
-}
-
-header li a {
-  text-decoration:none;
-  color:inherit;
-}
-
-header li a:visited {
-  color:inherit;
 }
